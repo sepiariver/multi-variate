@@ -1,6 +1,6 @@
 <?php
 /**
- * mvCookie
+ * mvGetCookie
  * @author @sepiariver
  * @copyright YJ Tso
  * @package Multi-Variate
@@ -57,6 +57,17 @@
  * 
  */
  
+// PATHS
+$mvPath = $modx->getOption('multivariate.core_path', null, $modx->getOption('core_path') . 'components/multivariate/');
+$mvModelPath = $mvPath . 'model/';
+
+// Get Class
+if (file_exists($mvModelPath . 'multivariate.class.php')) $mv = $modx->getService('multivariate', 'MultiVariate', $mvModelPath, $scriptProperties);
+if (!($mv instanceof MultiVariate)) {
+    $modx->log(modX::LOG_LEVEL_ERROR, '[mvGetCookie] could not load the required class!');
+    return;
+}
+ 
 // REQUIRED
 $name = $modx->getOption('name', $scriptProperties, '');
 if (empty($name)) return;
@@ -78,6 +89,6 @@ if (isset($_COOKIE[$name])) {
 }
 
 // Output
-$output = (empty($tpl)) ? $value : $modx->getChunk($tpl, array('value' => $value));
+$output = (empty($tpl)) ? $value : $mv->getChunk($tpl, array('value' => $value));
 if (empty($toPlaceholder)) return $output;
 $modx->setPlaceholder($toPlaceholder, $output);

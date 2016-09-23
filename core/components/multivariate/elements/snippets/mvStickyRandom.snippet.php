@@ -69,7 +69,7 @@ if (!empty($cookieName) && ($cookieVal === null)) {
 $options = array();
 foreach ($scriptProperties as $propkey => $propval) {
     if (strpos($propkey, 'option') !== 0) continue;
-    $options[substr($propkey, strlen('option'))] = $propval;
+    $options[substr($propkey, strlen('option'))] = $mv->getChunk($propval, $scriptProperties);
 }
 
 // OUTPUT
