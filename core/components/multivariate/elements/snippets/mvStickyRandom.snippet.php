@@ -12,10 +12,10 @@
  * Randomly cycle between 4 options and persist
  * [[!mvStickyRandom?
  *      &cookieName=`dimensionName`
- *      &option0=`@INLINE <script>window.onload = function() { ga('set', 'dimensionName', 'value0'); };</script>`
- *      &option1=`@INLINE <script>window.onload = function() { ga('set', 'dimensionName', 'value1'); };</script>`
- *      &option2=`@INLINE <script>window.onload = function() { ga('set', 'dimensionName', 'value2'); };</script>`
- *      &option3=`@INLINE <script>window.onload = function() { ga('set', 'dimensionName', 'value3'); };</script>`
+ *      &option0=`@INLINE <script>window.onload = function() { ga('set', 'dimension1', 'value0'); };</script>`
+ *      &option1=`@INLINE <script>window.onload = function() { ga('set', 'dimension1', 'value1'); };</script>`
+ *      &option2=`@INLINE <script>window.onload = function() { ga('set', 'dimension1', 'value2'); };</script>`
+ *      &option3=`@INLINE <script>window.onload = function() { ga('set', 'dimension1', 'value3'); };</script>`
  *      &power=`3`
  *  ]]
  * Randomly cycle between 2 options
