@@ -3,7 +3,7 @@
  * mvStickyRandom
  * @author @sepiariver
  * @copyright YJ Tso
- * @package Multi-Variate
+ * @package MultiVariate
  * @license GPL, no warranties, use at own risk. See included license file.
  * 
  * @description Returns randomized output, and optionally persists via cookie. Used for MV testing.
@@ -12,10 +12,10 @@
  * Randomly cycle between 4 options and persist
  * [[!stickyRandom?
  *      &cookieName=`dimensionName`
- *      &option0=`<script>window.onload = function() { ga('set', 'dimensionName', 'value0'); };</script>`
- *      &option1=`<script>window.onload = function() { ga('set', 'dimensionName', 'value1'); };</script>`
- *      &option2=`<script>window.onload = function() { ga('set', 'dimensionName', 'value2'); };</script>`
- *      &option3=`<script>window.onload = function() { ga('set', 'dimensionName', 'value3'); };</script>`
+ *      &option0=`@INLINE <script>window.onload = function() { ga('set', 'dimensionName', 'value0'); };</script>`
+ *      &option1=`@INLINE <script>window.onload = function() { ga('set', 'dimensionName', 'value1'); };</script>`
+ *      &option2=`@INLINE <script>window.onload = function() { ga('set', 'dimensionName', 'value2'); };</script>`
+ *      &option3=`@INLINE <script>window.onload = function() { ga('set', 'dimensionName', 'value3'); };</script>`
  *      &power=`3`
  *  ]]
  * Randomly cycle between 2 options

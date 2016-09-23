@@ -3,7 +3,7 @@
  * mvSetCookie
  * @author @sepiariver
  * @copyright YJ Tso
- * @package Multi-Variate
+ * @package MultiVariate
  * @license GPL, no warranties, use at own risk. See included license file.
  * 
  * Sets a cookie using PHP's setcookie()
