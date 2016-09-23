@@ -3,7 +3,7 @@
     "lowCaseName": "multivariate",
     "description": "A collection of MODX Snippets and tools to handle simple multi-variate (A/B) testing.",
     "author": "@sepiariver YJ Tso",
-    "version": "0.1.0",
+    "version": "0.1.0-dev1",
     "package": {
         "elements": {
             "snippets": [
