@@ -10,7 +10,7 @@
  * 
  * Example usage:
  * Randomly cycle between 4 options and persist
- * [[!stickyRandom?
+ * [[!mvStickyRandom?
  *      &cookieName=`dimensionName`
  *      &option0=`@INLINE <script>window.onload = function() { ga('set', 'dimensionName', 'value0'); };</script>`
  *      &option1=`@INLINE <script>window.onload = function() { ga('set', 'dimensionName', 'value1'); };</script>`
@@ -19,7 +19,7 @@
  *      &power=`3`
  *  ]]
  * Randomly cycle between 2 options
- * [[!stickyRandom?
+ * [[!mvStickyRandom?
  *      &option0=`zero`
  *      &option1=`one`
  * ]]

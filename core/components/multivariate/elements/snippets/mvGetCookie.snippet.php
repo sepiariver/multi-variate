@@ -8,7 +8,7 @@
  * 
  * A custom cookie checker for use in multi-variate testing. To check the 
  * named cookie on every request, this Snippet must be called uncacheable:
- * [[!mvCookie]]
+ * [[!mvGetCookie]]
  * 
  * PROPERTIES:
  * - &name        (string)  Required. Name of cookie to get/set.
@@ -27,11 +27,11 @@
  * 
  * EXAMPLE USAGE:
  * 
- * [[!mvCookie? &name=`variation`]]
+ * [[!mvGetCookie? &name=`variation`]]
  * If $_COOKIE['variation'] is set, the value will be returned. Otherwise 
  * nothing will be output. Cookie values are run through htmlspecialchars().
  * 
- * [[!mvCookie? 
+ * [[!mvGetCookie? 
  *    &name=`v` 
  *    &setValue=`hasCookie` 
  *    &notSetValue=`cookieless`
@@ -43,7 +43,7 @@
  * behaviour:
  * [[!Redirectoid@[[+property-set]]?]]
  *  
- * [[!mvCookie? 
+ * [[!mvGetCookie? 
  *    &name=`v` 
  *    &notSetValue=`no cookie here` 
  *    &setTpl=`cookieTpl`
